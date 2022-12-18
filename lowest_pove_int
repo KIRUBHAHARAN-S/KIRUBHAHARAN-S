@@ -1,0 +1,24 @@
+#Input
+
+n=input()
+list_inp=list(map(int,input().split()))
+list_inp.sort()
+print(list_inp)
+for i in range(0,len(list_inp)):
+    if (list_inp[i] != (list_inp[i+1]-1) and list_inp[i]>0):
+        pos = list_inp[i+1]-1
+        break
+print(pos)
+
+#Output
+
+4
+3 4 -1 1
+[-1, 1, 3, 4]
+2
+
+ ======
+4
+3 1 4 5
+[1, 3, 4, 5]
+2
