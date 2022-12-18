@@ -1,0 +1,20 @@
+#Input
+
+inp_str=input()
+reverse=inp_str[::-1]
+length=len(inp_str)
+str1=""
+for i in range(0,length,3):
+    if i+3<length:
+        str1=str1+reverse[i:i+3]+","
+    else:
+        str1=str1+reverse[i:]
+print(str1[::-1])
+
+#output
+
+10000000
+10,000,000
+
+1000
+1,000
