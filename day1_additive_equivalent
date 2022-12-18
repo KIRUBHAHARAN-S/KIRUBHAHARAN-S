@@ -1,0 +1,17 @@
+#Input
+list_inp = list(map(int,input().split()))
+num = int(input())
+list_1 = []
+for i in list_inp:
+    for j in list_inp:
+        c = i+j
+        list_1.append(c)
+pure_values = set(list_1)
+for i in pure_values:
+    if i==num:
+        print(True)
+
+#output
+10 15 3 7
+17
+True
