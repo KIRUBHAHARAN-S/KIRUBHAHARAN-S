@@ -1,3 +1,5 @@
+#input
+
 def largestSum(arr):
     inc=arr[0]
     exc=0
@@ -8,3 +10,11 @@ def largestSum(arr):
     return max(inc,exc)
 arr=list(map(int,input().split()))
 print(largestSum(arr))
+
+#output
+
+2 4 6 2 5
+13
+----------
+5 1 1 5
+10
