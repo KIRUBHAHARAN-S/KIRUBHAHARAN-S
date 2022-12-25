@@ -1,0 +1,25 @@
+#input
+
+num=int(input())
+a=1
+b=2
+if num==1:
+    print(a)
+elif num==2:
+    print(b)
+else:
+    for i in range(3,num+1):
+        temp=a+b
+        a=b
+        b=temp
+    print(b)
+
+#output
+2
+2
+-------
+4
+5
+-------
+5
+8
